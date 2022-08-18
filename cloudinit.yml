@@ -1,0 +1,8 @@
+#cloud-config
+repo_update: true
+repo_upgrade: all
+packages:
+  - nginx
+runcmd:
+  - echo "NGINX Installing."
+  - chmod -R 777 -p /var/www
